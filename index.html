@@ -1,0 +1,57 @@
+<html>
+    <body>
+        <style>
+            body{
+                background-image: radial-gradient(circle at 10% 20%, rgb(100, 43, 115) 0%, #040004da 90%);
+
+            }
+            .player-options img,
+            .enemy-options img{
+                max-width: 110px;
+                cursor: pointer;
+                opacity: 0.4;
+                padding-bottom: 50px;
+            }
+
+            h1{
+                border-bottom: 1px solid #ccc;
+                padding-bottom: 10px;
+                color: #ffffffc5;
+            }
+
+            .align{
+                display: flex;
+                margin-left: 340px;
+            }
+
+            .player-options, .enemy-options{
+                width: 50%;
+            }
+
+            .resultado{
+                text-align: center;
+                margin-top: -35px;
+                height: 30px;
+                align-items: center;
+            }
+
+        </style>
+        <h1 style="text-align: center;">Pedra, Papel e Tesoura!</h1>
+        <div class="align">    
+            <div class="player-options">
+                <div><img opt= 'papel' src="paper.png" alt="Papel"></div>
+                <div><img opt= 'tesoura' src="scisor.png" alt="tesoura"></div>
+                <div><img opt= 'pedra' src="rock.png" alt="pedra"></div>
+            </div>
+            
+            <div class="enemy-options">
+                <div><img opt="papel" src="paper.png" alt="Papel"></div>
+                <div><img opt="tesoura" src="scisor.png" alt="tesoura"></div>
+                <div><img opt="pedra" src="rock.png" alt="pedra"></div>
+            </div>
+        </div>
+
+        <h2 class="resultado"></h2>
+        <script src="script.js"></script>
+    </body>
+</html>
